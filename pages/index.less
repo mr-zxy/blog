@@ -1,0 +1,337 @@
+#Index {
+    width: 100%;
+    // max-height: 100vh;
+    background: #f28181;
+    box-sizing: border-box;
+    @body-padding: 60px;
+
+    .wrapper-body-content {
+        padding: @body-padding;
+        box-sizing: border-box;
+        position: relative;
+
+        .content {
+            border-radius: 50px;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 0 30px #FFFFFF;
+            height: calc(100vh - @body-padding * 2);
+
+            aside {
+                width: 300px;
+                background-color: #FFFFFF;
+                padding-top: 53px;
+
+                .content-top {
+                    margin-bottom: 126px;
+
+                    .title {
+                        margin-bottom: 17px;
+
+                        h2 {
+                            font-size: 34px;
+                            font-family: SignPainter-HouseScriptSemibold, SignPainter;
+                            font-weight: normal;
+                            color: #000000;
+                            line-height: 41px;
+                            text-align: center;
+                        }
+                    }
+
+                    .portrait {
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin: 0 auto 22px auto;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                        }
+                    }
+
+                    .name {
+                        text-align: center;
+                        font-size: 24px;
+                        font-family: PingFangSC-Semibold, PingFang SC;
+                        font-weight: 600;
+                        color: #000000;
+                        line-height: 33px;
+                        margin-bottom: 6px;
+                    }
+
+                    .tag {
+                        text-align: center;
+                        font-size: 18px;
+                        font-family: WeibeiSC-Bold, WeibeiSC;
+                        font-weight: bold;
+                        color: #6D7278;
+                        line-height: 25px;
+                    }
+                }
+
+                nav {
+                    ul {
+                        li {
+                            display: flex;
+                            padding-left: 69px;
+                            align-items: center;
+                            margin-bottom: 17px;
+
+                            .icon {
+                                width: 30px;
+                                height: 30px;
+                                margin-right: 26px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                }
+                            }
+
+                            .name {
+                                font-size: 16px;
+                                font-family: PingFangSC-Regular, PingFang SC;
+                                font-weight: 400;
+                                color: #6D7278;
+                                flex: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            main {
+                flex: 1;
+                background-color: #E9DBDB;
+                padding-top: 62px;
+
+                .wrapper-head {
+                    padding-left: 51px;
+                    display: flex;
+
+                    .content-query {
+                        @pad: 26px;
+                        position: relative;
+                        border-bottom: 1px solid #979797;
+                        display: flex;
+
+                        .icon {
+                            width: @pad;
+                            height: @pad;
+                            background: url("../static/image/sousuo_1.png") no-repeat;
+                            background-size: 100% 100%;
+                            z-index: 9;
+                            margin-right: 16px;
+                            position: relative;
+                            top: 3px;
+                        }
+
+                        .Input {
+                            width: 410px;
+                            background-color: transparent;
+                            border-top: none;
+                            border-left: none;
+                            border-right: none;
+                            border-bottom: none;
+                            padding: 0px !important;
+                        }
+
+                        .Input:focus {
+                            box-shadow: none !important;
+                        }
+                    }
+
+                    .wrapper-icon {
+                        @w: 50px;
+                        flex: 1;
+                        display: flex;
+                        justify-content: end;
+                        padding-right: 86px;
+
+                        .icon1 {
+                            background: url(../static/image/github.png) no-repeat;
+                            background-size: 100% 100%;
+                        }
+
+                        .icon2 {
+                            background: url(../static/image/quanqing.png) no-repeat;
+                            background-size: 100% 100%;
+                        }
+
+                        .icon {
+                            width: @w;
+                            height: @w;
+                        }
+                    }
+
+                }
+
+                .wrapper-body {
+                    display: flex;
+                    align-items: center;
+                    padding: 60px 60px 20px;
+
+                    .img {
+                        width: 124px;
+                        height: 124px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin-right: 35px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                        }
+                    }
+
+                    .info {
+                        flex: 1;
+
+                        h1 {
+                            font-size: 48px;
+                            font-family: YuppyTC-Regular, YuppyTC;
+                            font-weight: 400;
+                            color: #000000;
+                            // line-height: 67px;  
+                            margin-bottom: 8px;
+                        }
+
+                        h2 {
+                            font-size: 24px;
+                            font-family: YuppyTC-Regular, YuppyTC;
+                            font-weight: 400;
+                            color: #6D7278;
+                            // line-height: 33px;
+                        }
+                    }
+                }
+
+                .wrapper-content {
+                    overflow: auto;
+                    // background-color: red;
+                    // height: 78%;
+                    height: calc(100vh - 204px - 50px - 202px);
+
+                    .item {
+                        margin-bottom: 20px;
+
+                        .title {
+                            padding: 10px 0 5px 0;
+                            font-size: 48px;
+                            font-family: PingFangSC-Semibold, PingFang SC;
+                            font-weight: 600;
+                            color: #000000;
+                            text-align: center;
+                            margin-bottom: 5px;
+                        }
+
+                        .subtitle {
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 5px;
+
+                            .subtitle-item {
+                                display: flex;
+                                align-items: center;
+
+                                .icon1 {
+                                    background: url("../static/image/fabiao.png") no-repeat;
+                                    background-size: 100% 100%;
+                                }
+
+                                .icon2 {
+                                    background: url("../static/image/word.png") no-repeat;
+                                    background-size: 100% 100%;
+                                }
+
+                                .icon3 {
+                                    background: url("../static/image/time.png") no-repeat;
+                                    background-size: 100% 100%;
+                                }
+
+                                .icon {
+                                    width: 40px;
+                                    height: 40px;
+                                    margin: 5px;
+                                }
+
+                                .text {
+                                    font-size: 27px;
+                                    font-family: PingFangSC-Regular, PingFang SC;
+                                    font-weight: 400;
+                                    color: #6D7278;
+                                    line-height: 38px;
+                                }
+                            }
+                        }
+
+                        .textarea {
+                            padding: 0 40px;
+                            font-size: 30px;
+                            box-sizing: border-box;
+                            font-family: PingFangSC-Medium, PingFang SC;
+                            font-weight: 500;
+                            color: #8C8F93;
+                            line-height: 50px;
+                            margin-bottom: 20px;
+                        }
+
+                        .operation {
+                            display: flex;
+                            justify-content: center;
+
+                            .full-text {
+                                width: 220px;
+                                height: 60px;
+                                line-height: 60px;
+                                background: #000000;
+                                border: 1px solid #000000;
+                                font-size: 32px;
+                                font-family: PingFangSC-Regular, PingFang SC;
+                                font-weight: 400;
+                                color: #FFFFFF;
+                                text-align: center;
+                                border-radius: 20px;
+
+                                span {
+                                    position: relative;
+                                    left: 10px;
+
+                                }
+
+                                .left {
+                                    margin-right: 6px;
+                                }
+
+                                .right {
+                                    position: relative;
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            padding-top: 20px;
+            box-sizing: border-box;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            span {
+                font-size: 24px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #6D7278;
+            }
+        }
+    }
+}
